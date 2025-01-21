@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee House</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <style>
+      :root {
+        --primary-color: #6a492b;
+        --secondary-color: #e0c097;
+        --light-color: #fff8f0;
+        --dark-color: #1b1b1b;
+        --font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--font-family);
+        color: var(--dark-color);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+      }
+
+      .navbar .logo {
+        display: flex;
+        align-items: center;
+        color: var(--primary-color);
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .navbar .logo i {
+        margin-right: 8px;
+      }
+
+      .navbar .navigation a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: var(--dark-color);
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .navbar .navigation a:hover {
+        color: var(--primary-color);
+      }
+
+      /* Landing Section */
+      .landing {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        color: var(--light-color);
+        padding: 60px 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+      }
+
+      .landing .banner h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .landing .banner p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .landing .banner-btn {
+        padding: 10px 20px;
+        margin-right: 10px;
+        background-color: var(--light-color);
+        color: var(--primary-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .landing .banner-btn:hover {
+        background-color: var(--secondary-color);
+        color: var(--light-color);
+      }
+
+      .landing .swiper {
+        max-width: 50%;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* About Section */
+      .about {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .about div {
+        background-color: var(--light-color);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .about div:hover {
+        transform: scale(1.05);
+      }
+
+      .about i {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: var(--primary-color);
+      }
+
+      /* Menu Section */
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 0;
+      }
+
+      .menu-left {
+        max-width: 50%;
+      }
+
+      .menu-left h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .menu-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .menu-img-wrapper {
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .menu-img-wrapper img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+      }
+
+      .menu-img-wrapper img:hover {
+        transform: scale(1.1);
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--primary-color);
+        color: var(--light-color);
+        margin-top: 40px;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-mug-saucer"></i> Coffee House
+        </div>
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+      <!-- End of Navigation -->
+
+      <!-- Landing -->
+      <section class="landing">
+        <div class="banner">
+          <h1>Experience the Finest Coffee</h1>
+          <p>Your perfect coffee moment is just a sip away.</p>
+          <button class="banner-btn">Order Now</button>
+          <button class="banner-btn">View Menu</button>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="C:\Users\bhanu\OneDrive\Desktop\birth\caption.jpg"alt="Coffee Image 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="C:\Users\bhanu\OneDrive\Desktop\birth\2 c.jpg" alt="Coffee Image 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="C:\Users\bhanu\OneDrive\Desktop\birth\3c.jpg" alt="Coffee Image 3" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- End of Landing -->
+
+      <!-- About Section -->
+      <section class="about">
+        <div>
+          <i class="fa-solid fa-mobile"></i>
+          <h1>Easy to Order</h1>
+          <p>Order your favorite coffee anytime, anywhere.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-truck"></i>
+          <h1>Fast Delivery</h1>
+          <p>Enjoy fresh coffee delivered straight to your door.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-mug-hot"></i>
+          <h1>Quality Coffee</h1>
+          <p>Indulge in the richness of premium coffee blends.</p>
+        </div>
+      </section>
+      <!-- End of About Section -->
+
+      
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 Coffee House. All Rights Reserved.</p>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+    <!-- End of Container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

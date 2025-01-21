@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #ece9e6, #ffffff); /* Elegant Gradient Background */
+            color: #333;
+        }
+        header {
+            background-color: #34495e; /* Rich Dark Blue */
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            font-family: 'Merriweather', serif;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 5px solid #2c3e50;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-family: 'Merriweather', serif;
+            color: #34495e;
+            font-size: 2.6rem;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            border-bottom: 4px solid #34495e;
+            padding-bottom: 10px;
+            letter-spacing: 3px;
+        }
+        .about-section, .mission-vision-section, .team-section {
+            margin-bottom: 60px;
+        }
+        .about-section p, .mission-vision-section p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+            margin-top: 15px;
+        }
+        .mission-vision-section p {
+            font-size: 1.25rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+        .team-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            text-align: center;
+            width: 30%;
+            padding: 30px;
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 6px solid #34495e;
+            transition: transform 0.3s ease;
+        }
+        .team-member h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            color: #34495e;
+            font-weight: bold;
+        }
+        .team-member p {
+            font-size: 1.1rem;
+            color: #777;
+        }
+        .team-member:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .team-member:hover img {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            background-color: #34495e;
+            color: white;
+            padding: 25px 0;
+            font-size: 1.1rem;
+        }
+
+        /* Ensure responsiveness of images */
+        @media (max-width: 768px) {
+            .team-member {
+                width: 48%;
+            }
+        }
+        @media (max-width: 480px) {
+            .team-member {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Us</h1>
+</header>
+
+<div class="container">
+    <div class="about-section">
+        <h2>Who We Are</h2>
+        <p>Welcome to Coffee House, a place where creativity and dedication meet to deliver excellence. With a passionate team, we focus on transforming ideas into tangible results, pushing the boundaries of innovation to redefine industries. We take pride in our values of collaboration, quality, and sustainability.</p>
+    </div>
+
+    <div class="mission-vision-section">
+        <h2>Our Mission</h2>
+        <p>At Coffee House, our mission is to craft the finest coffee experience, bringing people together over rich flavors and unforgettable moments. We are committed to sourcing ethically grown coffee beans, brewing them to perfection, and offering a warm, inviting atmosphere where every customer feels at home. Our dedication to quality and customer satisfaction drives us to continuously innovate and provide exceptional service.</p>
+
+        <h2>Our Vision</h2>
+        <p>Our vision is to be the ultimate destination for coffee lovers, creating a space where people from all walks of life can connect, relax, and enjoy the art of coffee. We aim to expand our reach globally, becoming a renowned symbol of quality, sustainability, and community, while constantly inspiring joy and creativity through every cup we serve.</p>
+    </div>
+
+    <div class="team-section">
+        <h2>Meet the Team</h2>
+        <div class="team-member">
+            <img src="C:\Users\bhanu\OneDrive\Desktop\birth\IMG-20240321-WA0013.jpg" alt="Team Member">
+            <h3>BHANU TEJA</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="C:\Users\bhanu\OneDrive\Desktop\birth\d.jpg" alt="Team Member">
+            <h3>AKHIL</h3>
+            <p>Head of Operations</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Coffee House. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

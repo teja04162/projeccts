@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House Menu</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdf9f3;
+      color: #3e3e3e;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    .header {
+      background-color: #c39a6b;
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+    }
+
+    /* Menu Section */
+    .menu {
+      padding: 50px 20px;
+    }
+
+    .menu-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .menu-header .main-heading {
+      color: #c39a6b;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+    }
+
+    .menu-header h1 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+
+    .menu-header p {
+      font-size: 1rem;
+      color: #6e6e6e;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-category {
+      background-color: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-category h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.5rem;
+      color: #3e3e3e;
+      margin-bottom: 10px;
+    }
+
+    .menu-category ul li {
+      font-size: 1rem;
+      color: #6e6e6e;
+      margin: 5px 0;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #3e3e3e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .footer p {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Welcome to Coffee House</h1>
+    <p>Your perfect cup of coffee and more!</p>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu">
+    <div class="menu-header">
+      <h3 class="main-heading">Discover</h3>
+      <h1>Our Menu</h1>
+      <p>
+        Explore our carefully crafted menu, offering a blend of rich flavors and delicious treats to complement your coffee.
+      </p>
+    </div>
+    <div class="menu-container">
+      <div class="menu-category">
+        <h2>Espresso Beverages</h2>
+        <ul>
+          <li>Espresso Shot</li>
+          <li>Double Espresso</li>
+          <li>Americano</li>
+          <li>Cappuccino</li>
+          <li>Flat White</li>
+          <li>Latte (Vanilla, Caramel, Hazelnut)</li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h2>Specialty Coffees</h2>
+        <ul>
+          <li>Mocha Latte</li>
+          <li>Affogato (Espresso with Vanilla Ice Cream)</li>
+          <li>Irish Coffee (Non-Alcoholic Option Available)</li>
+          <li>Cold Brew Coffee</li>
+          <li>Nitro Cold Brew</li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h2>Tea Selection</h2>
+        <ul>
+          <li>English Breakfast</li>
+          <li>Earl Grey</li>
+          <li>Green Tea</li>
+          <li>Chamomile Tea</li>
+          <li>Peppermint Tea</li>
+          <li>Chai Latte</li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h2>Pastries & Desserts</h2>
+        <ul>
+          <li>Croissants (Plain, Almond, Chocolate)</li>
+          <li>Muffins (Blueberry, Banana Nut, Double Chocolate)</li>
+          <li>Scones (Served with Clotted Cream and Jam)</li>
+          <li>Tiramisu</li>
+          <li>Cheesecake (Classic, Berry, Chocolate)</li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h2>Sandwiches & Wraps</h2>
+        <ul>
+          <li>Grilled Chicken Panini</li>
+          <li>Caprese Sandwich</li>
+          <li>Smoked Salmon Bagel</li>
+          <li>Veggie Wrap with Hummus</li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h2>Smoothies & Juices</h2>
+        <ul>
+          <li>Mango Madness Smoothie</li>
+          <li>Berry Blast Smoothie</li>
+          <li>Tropical Paradise (Pineapple, Coconut, Mango)</li>
+          <li>Freshly Squeezed Orange Juice</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Coffee House. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
